@@ -1,22 +1,12 @@
 
 
 from flask import Blueprint, render_template, request
-from sklearn.datasets import load_iris
 from sklearn.linear_model import LogisticRegression
 
 from web_app.models import User
 from web_app.services.basilica_service import connection as basilica_connection
 
 stats_routes = Blueprint("stats_routes", __name__)
-
-@stats_routes.route("/stats/iris")
-def iris():
-    # train the model (on the fly, in real-time):
-    X, y = load_iris(return_X_y=True)
-    clf = LogisticRegression(random_state=0, solver="lbfgs", multi_class="multinomial").fit(X, y)
-    # make a prediction:
-    results = str(clf.predict(X[:2, :]))
-    return results
 
 @stats_routes.route("/")
 def twitoff_prediction_form():

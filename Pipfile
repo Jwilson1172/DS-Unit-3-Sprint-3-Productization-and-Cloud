@@ -10,6 +10,8 @@ flask = "*"
 python-dotenv = "*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
+tweepy = "*"
+basilica = "*"
 
 [dev-packages]
 
