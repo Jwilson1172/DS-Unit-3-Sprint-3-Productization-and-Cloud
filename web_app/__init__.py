@@ -10,7 +10,7 @@ from web_app.routes.book_routes import book_routes
 from web_app.routes.twitter_routes import twitter_routes
 from web_app.routes.stats_routes import stats_routes
 
-DATABASE_URI=getenv("PROD_PG_URI")
+DATABASE_URI=getenv("DATABASE_URI")
 SECRET_KEY = getenv("SECRET_KEY","super secret")
 
 def create_app():
