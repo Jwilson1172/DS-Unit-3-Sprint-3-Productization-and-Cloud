@@ -6,3 +6,6 @@ migrations
 
 # ignore secret creds:
 .env
+
+# ignoring class stuff for heroku
+module*
