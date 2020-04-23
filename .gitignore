@@ -8,4 +8,4 @@ migrations
 .env
 
 # ignoring class stuff for heroku
-module*
+class
